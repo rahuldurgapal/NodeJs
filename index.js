@@ -4,20 +4,23 @@
 
 // console.log("->>",__dirname);
 
-let http = require('http');
+// let http = require('http');
 
-http.createServer((req,res)=>{
+// http.createServer((req,res)=>{
 
-    res.write("<h1>Hello, rahul this from server</h1>");
-    res.end();
-}
+//     res.write("<h1>Hello, rahul this from server</h1>");
+//     res.end();
+// }
 
 
-).listen(4600);
+// ).listen(4600);
 
-function dataControl(req,res){
-    res.write("hello from server");
-    res.end();
-}
+// function dataControl(req,res){
+//     res.write("hello from server");
+//     res.end();
+// }
 
-http.createServer(dataControl).listen(4700);
+// http.createServer(dataControl).listen(4700);
+
+var color = require('colors');
+console.log("hello".red);

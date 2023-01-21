@@ -22,6 +22,10 @@
 
 // http.createServer(dataControl).listen(4700);
 
-var color = require('colors');
-console.log("hello".blue);
-console.log("hello world");
+// var color = require('colors');
+// console.log("hello".blue);
+// console.log("hello world");
+
+let fs = require('fs');
+let input = process.argv;
+fs.writeFileSync(input[2],input[3]);

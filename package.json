@@ -1,0 +1,28 @@
+{
+  "name": "nodejs_tutorial",
+  "version": "1.0.0",
+  "description": "hello rahul",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahuldurgapal/NodeJs.git"
+  },
+  "keywords": [
+    "rahul",
+    "code",
+    "program",
+    "nodejs"
+  ],
+  "author": "rahul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rahuldurgapal/NodeJs/issues"
+  },
+  "homepage": "https://github.com/rahuldurgapal/NodeJs#readme",
+  "dependencies": {
+    "color": "^4.2.3"
+  }
+}

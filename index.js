@@ -23,4 +23,5 @@
 // http.createServer(dataControl).listen(4700);
 
 var color = require('colors');
-console.log("hello".red);
+console.log("hello".blue);
+console.log("hello world");

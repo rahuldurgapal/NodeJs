@@ -50,8 +50,18 @@
 //     })
 // })
 
-console.log("starting");
-setTimeout(()=>{
-    console.log("logic");
-},2000);
-console.log("complete");
+// console.log("starting");
+// setTimeout(()=>{
+//     console.log("logic");
+// },2000);
+// console.log("complete");
+
+const exp = require('express');
+const path = require('path');
+
+const app = exp();
+const dirPath = path.join(__dirname,'public');
+
+app.use(exp.static(dirPath));
+
+app.listen(5000);

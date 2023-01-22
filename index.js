@@ -26,6 +26,32 @@
 // console.log("hello".blue);
 // console.log("hello world");
 
-let fs = require('fs');
-let input = process.argv;
-fs.writeFileSync(input[2],input[3]);
+// let fs = require('fs');
+// let input = process.argv;
+// if(input[2]=='add'){
+//     fs.writeFileSync(input[3],input[4]);
+// }
+// else if(input[2]=='remove'){
+//     fs.unlinkSync(input[3]);
+// }
+// else{
+//     console.log("Invalid Input");
+// }
+
+// const fs =require('fs');
+// const path = require('path');
+// const dirpath = path.join(__dirname,'Files');
+// // for(i=1;i<=4;i++)
+// // fs.writeFileSync(dirpath+"/appled"+i+".txt" ,"test successfull");
+
+// fs.readdir(dirpath,(err,Files)=>{
+//     Files.foreach((item)=>{
+//         console.log(item);
+//     })
+// })
+
+console.log("starting");
+setTimeout(()=>{
+    console.log("logic");
+},2000);
+console.log("complete");

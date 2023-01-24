@@ -62,6 +62,8 @@ const path = require('path');
 const app = exp();
 const dirPath = path.join(__dirname,'public');
 
+app.set('view engine','ejs');
+
 // app.use(exp.static(dirPath));
 
 app.get('',(req,res)=>{
@@ -71,8 +73,19 @@ app.get('',(req,res)=>{
 // app.get('/about',(req,res)=>{
 //     res.sendFile(dirPath+"/about.html")
 // })
+
 app.get('/aboutme',(req,res)=>{
     res.sendFile(dirPath+"/about.html")
+})
+
+app.get('/profile',(req,res)=>{
+
+    const user={
+        name:'rahul',
+        email: 'rahul@gmail.com',
+        city: 'varanasi'
+    }
+    res.render('profile',{user});
 })
 
 app.get('/*',(req,res)=>{

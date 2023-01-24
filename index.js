@@ -62,6 +62,20 @@ const path = require('path');
 const app = exp();
 const dirPath = path.join(__dirname,'public');
 
-app.use(exp.static(dirPath));
+// app.use(exp.static(dirPath));
 
+app.get('',(req,res)=>{
+    res.sendFile(dirPath+"/index.html");
+})
+
+// app.get('/about',(req,res)=>{
+//     res.sendFile(dirPath+"/about.html")
+// })
+app.get('/aboutme',(req,res)=>{
+    res.sendFile(dirPath+"/about.html")
+})
+
+app.get('/*',(req,res)=>{
+    res.sendFile(dirPath+"/nopage.html"); 
+})
 app.listen(5000);
